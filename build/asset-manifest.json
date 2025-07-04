@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.256cdcf4.css",
+    "main.js": "/static/js/main.d8d39886.js",
+    "static/js/977.22fcbb56.chunk.js": "/static/js/977.22fcbb56.chunk.js",
+    "static/js/455.8d008ecc.chunk.js": "/static/js/455.8d008ecc.chunk.js",
+    "static/media/White Beige Minimalist Professional Business Invoice (1) - Kopya.pdf": "/static/media/White Beige Minimalist Professional Business Invoice (1) - Kopya.d1e1aba232ffb661c701.pdf",
+    "static/media/e-arsiv-logo.png": "/static/media/e-arsiv-logo.a4d3e51bea09cbde1f45.png",
+    "index.html": "/index.html",
+    "static/media/trendyol.svg": "/static/media/trendyol.cfc5a227bf325fff30669942f7862572.svg",
+    "static/media/amazon.svg": "/static/media/amazon.5c8729135eea06b3f04030a96d3d9812.svg",
+    "static/media/hepsiburada.svg": "/static/media/hepsiburada.f01acad1232ec27d28d2aaa50985b16f.svg",
+    "static/media/n11.svg": "/static/media/n11.9cdce3f9988e0d79d3b99965ac4df03c.svg",
+    "main.256cdcf4.css.map": "/static/css/main.256cdcf4.css.map",
+    "main.d8d39886.js.map": "/static/js/main.d8d39886.js.map",
+    "977.22fcbb56.chunk.js.map": "/static/js/977.22fcbb56.chunk.js.map",
+    "455.8d008ecc.chunk.js.map": "/static/js/455.8d008ecc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.256cdcf4.css",
+    "static/js/main.d8d39886.js"
+  ]
+}
