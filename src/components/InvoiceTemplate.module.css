@@ -1,0 +1,146 @@
+.invoiceContainer {
+  position: relative;
+  width: 800px;
+  min-height: 1130px;
+  padding: 40px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url('../assets/logos/White-Beige-Minimalist-Professional-Business-Invoice.html');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.companyInfo {
+  margin-bottom: 40px;
+}
+
+.companyInfo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.companyInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.invoiceHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.invoiceTitle h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.invoiceTitle p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.customerInfo h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.customerInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.productTable th {
+  background-color: #f7f7f7;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.productTable td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.productTable td:nth-child(2),
+.productTable td:nth-child(3),
+.productTable td:nth-child(4),
+.productTable th:nth-child(2),
+.productTable th:nth-child(3),
+.productTable th:nth-child(4) {
+  text-align: right;
+}
+
+.totalSection {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.totalSection > div {
+  width: 300px;
+}
+
+.totalSection p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.grandTotal {
+  font-weight: bold;
+  font-size: 16px !important;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px !important;
+}
+
+.bankInfo {
+  margin-bottom: 40px;
+}
+
+.bankInfo h3,
+.notes h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bankInfo p,
+.notes p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footer p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footerContact {
+  font-size: 14px;
+}
+
+.footerContact p {
+  margin: 5px 0;
+} 

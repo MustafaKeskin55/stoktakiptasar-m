@@ -1,0 +1,162 @@
+.pageContainer {
+  padding: 2rem;
+  background-color: #F8F9FA;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.searchContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #4FD1C5;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.1);
+}
+
+.filterSelect {
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  background-color: white;
+}
+
+.table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.tableHeader {
+  background-color: #F7FAFC;
+  color: #4A5568;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.tableCell {
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+  color: #2D3748;
+}
+
+.tableRow:hover {
+  background-color: #F7FAFC;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.statusInStock {
+  background-color: #C6F6D5;
+  color: #2F855A;
+}
+
+.statusLow {
+  background-color: #FEEBC8;
+  color: #C05621;
+}
+
+.statusOutOfStock {
+  background-color: #FED7D7;
+  color: #C53030;
+}
+
+.actionButton {
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #4A5568;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #EDF2F7;
+  color: #2D3748;
+}
+
+.addButton {
+  background-color: #4FD1C5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: #38B2AC;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 209, 197, 0.2);
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.modalHeader {
+  margin-bottom: 1.5rem;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4A5568;
+}
+
+.formInput {
+  padding: 0.75rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #4FD1C5;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.1);
+} 

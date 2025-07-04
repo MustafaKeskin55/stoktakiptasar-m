@@ -1,0 +1,45 @@
+.navbar {
+  background: white;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.navbar input:focus {
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+.searchInput {
+  max-width: 400px;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #E53E3E;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .searchInput {
+    max-width: 100%;
+  }
+} 

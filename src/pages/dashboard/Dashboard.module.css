@@ -1,0 +1,170 @@
+.dashboardContainer {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.mainContent {
+  overflow-y: auto;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+}
+
+.chartContainer {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.recentActivities {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.activityItem {
+  padding: 10px 0;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+}
+
+.filterBar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pageContainer {
+  padding: 2rem;
+  background-color: #F8F9FA;
+}
+
+.statsCard {
+  background: linear-gradient(135deg, #FFF 0%, #F7FAFC 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.statsCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.statsCardTitle {
+  color: #718096;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.statsCardValue {
+  color: #2D3748;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.iconContainer {
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.dataTable th {
+  background-color: #F7FAFC;
+  color: #718096;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.dataTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+  color: #2D3748;
+}
+
+.dataTable tr:hover {
+  background-color: #F7FAFC;
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.statusSuccess {
+  background-color: #C6F6D5;
+  color: #2F855A;
+}
+
+.statusWarning {
+  background-color: #FEEBC8;
+  color: #C05621;
+}
+
+.statusError {
+  background-color: #FED7D7;
+  color: #C53030;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.welcomeText {
+  color: #718096;
+  font-size: 1rem;
+  line-height: 1.5;
+} 

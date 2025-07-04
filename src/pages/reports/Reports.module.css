@@ -1,0 +1,143 @@
+.reportsContainer {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.statCard {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.chartContainer {
+  height: 300px;
+  margin: 20px 0;
+}
+
+.tableContainer {
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filterSection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dateRange {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pageContainer {
+  padding: 2rem;
+  background-color: #F8F9FA;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.timeSelect {
+  padding: 0.75rem 1rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.timeSelect:focus {
+  outline: none;
+  border-color: #4FD1C5;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.1);
+}
+
+.statCard {
+  background: linear-gradient(135deg, #FFF 0%, #F7FAFC 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.statTitle {
+  color: #718096;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.statValue {
+  color: #2D3748;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+.statSubValue {
+  color: #48BB78;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.iconContainer {
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reportCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tableHeader {
+  background-color: #F7FAFC;
+  color: #4A5568;
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem;
+  border-bottom: 2px solid #E2E8F0;
+}
+
+.tableCell {
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+  color: #2D3748;
+}
+
+.tableRow:hover {
+  background-color: #F7FAFC;
+} 

@@ -1,0 +1,87 @@
+.integrationCard {
+  transition: all 0.2s ease;
+  border: 1px solid #E2E8F0;
+  background: white;
+  overflow: hidden;
+}
+
+.integrationCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.platformLogo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: grayscale(0);
+  transition: all 0.3s ease;
+}
+
+.platformLogo.inactive {
+  filter: grayscale(1);
+  opacity: 0.7;
+}
+
+.statusBadge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.statusBadge.active {
+  background-color: #C6F6D5;
+  color: #2F855A;
+}
+
+.statusBadge.inactive {
+  background-color: #EDF2F7;
+  color: #4A5568;
+}
+
+.cardHeader {
+  border-bottom: 1px solid #E2E8F0;
+  padding: 1.5rem;
+}
+
+.cardBody {
+  padding: 1.5rem;
+  min-height: 100px;
+}
+
+.cardFooter {
+  border-top: 1px solid #E2E8F0;
+  padding: 1rem 1.5rem;
+  background-color: #F7FAFC;
+}
+
+.switchContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actionButton {
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+.actionButton:hover {
+  background-color: #EDF2F7;
+}
+
+.platformName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #2D3748;
+}
+
+.platformDescription {
+  color: #718096;
+  font-size: 0.875rem;
+  line-height: 1.5;
+} 

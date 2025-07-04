@@ -1,0 +1,86 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  border-right: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.logoContainer {
+  padding: 1.5rem;
+  flex-direction: column;
+}
+
+.menuItem {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  margin: 0 0.75rem;
+}
+
+.menuItem:hover {
+  background-color: #EDF2F7;
+}
+
+.menuItem.active {
+  background-color: #EBF8FF;
+  color: #3182CE;
+}
+
+.menuItem.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background-color: #3182CE;
+  border-radius: 0 4px 4px 0;
+}
+
+.menuIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.menuText {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.userInfo {
+  margin-top: auto;
+  border-top: 1px solid #E2E8F0;
+  background-color: #F7FAFC;
+}
+
+.userAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #3182CE;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+} 
