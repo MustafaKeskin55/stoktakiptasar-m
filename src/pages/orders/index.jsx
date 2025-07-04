@@ -37,8 +37,6 @@ import {
   FiTrash2,
   FiCheckCircle,
 } from 'react-icons/fi';
-import Sidebar from '../../components/Sidebar';
-import Navbar from '../../components/Navbar';
 import styles from './Orders.module.css';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
@@ -251,9 +249,7 @@ export default function Orders() {
 
   return (
     <Flex minH="100vh">
-      <Sidebar />
       <Box flex="1" ml="280px">
-        <Navbar />
         <Box className={styles.pageContainer}>
           <Box className={styles.header}>
             <Heading size="lg">Siparişler</Heading>

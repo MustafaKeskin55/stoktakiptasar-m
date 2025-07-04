@@ -36,7 +36,6 @@ import {
   Container
 } from '@chakra-ui/react';
 import { FiSearch, FiPlus, FiEdit2, FiTrash2, FiPhone, FiMail, FiPackage, FiUser, FiMapPin, FiTrendingUp, FiCalendar } from 'react-icons/fi';
-import Sidebar from '../../components/Sidebar';
 import styles from './Suppliers.module.css';
 
 const Suppliers = () => {
@@ -121,7 +120,6 @@ const Suppliers = () => {
 
   return (
     <Flex className={styles.container}>
-      <Sidebar />
       <Box className={styles.content}>
         {/* İstatistikler */}
         <Container maxW="container.xl" py={8}>

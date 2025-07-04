@@ -26,10 +26,12 @@ import {
   FiDollarSign,
   FiTrendingUp,
   FiPackage,
+  FiBox,
+  FiShoppingCart,
+  FiBarChart2,
+  FiArrowUp,
+  FiArrowDown,
 } from 'react-icons/fi';
-import Navbar from '../../components/Navbar';
-import Sidebar from '../../components/Sidebar';
-import StockTable from '../../components/StockTable';
 import AddProductModal from '../../components/AddProductModal';
 import styles from './Dashboard.module.css';
 
@@ -110,9 +112,7 @@ const Dashboard = () => {
 
   return (
     <Flex minH="100vh">
-      <Sidebar />
       <Box flex="1" ml="280px">
-        <Navbar />
         <Box className={styles.pageContainer}>
           <Box mb={8}>
             <Heading size="lg" mb={2}>Hoş Geldiniz</Heading>

@@ -13,8 +13,6 @@ import {
 import { FiSettings } from 'react-icons/fi';
 import styles from './Integrations.module.css';
 import IntegrationSettingsModal from '../../components/IntegrationSettingsModal';
-import Sidebar from '../../components/Sidebar';
-import Navbar from '../../components/Navbar';
 
 // Import platform logos
 import trendyolLogo from '../../assets/logos/trendyol.svg';
@@ -84,9 +82,7 @@ export default function Integrations() {
 
   return (
     <Flex minH="100vh">
-      <Sidebar />
       <Box flex="1" ml="280px">
-        <Navbar />
         <Box p={8}>
           <Heading mb={6}>Entegrasyonlar</Heading>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3, xl: 4 }} spacing={6}>

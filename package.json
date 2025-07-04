@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",

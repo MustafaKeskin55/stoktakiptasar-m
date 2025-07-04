@@ -3,16 +3,73 @@
   overflow-x: auto;
 }
 
+.tableWrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--chakra-shadows-card);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.tableWrapper:hover {
+  box-shadow: var(--chakra-shadows-hover);
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 .tableRow {
   transition: background-color 0.2s;
 }
 
 .tableRow:hover {
-  background-color: #f7fafc;
+  background-color: var(--chakra-colors-gray-50);
+}
+
+.searchInputGroup {
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 0 1px var(--chakra-colors-brand-500);
+  border-color: var(--chakra-colors-brand-500);
+}
+
+.mobileCard {
+  transition: all 0.2s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mobileCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--chakra-shadows-hover);
 }
 
 @media (max-width: 768px) {
   .tableContainer {
     font-size: 0.875rem;
   }
+
+  .searchInputGroup {
+    width: 100%;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.mobileCard {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.tableRow {
+  animation: fadeIn 0.3s ease-out;
 } 

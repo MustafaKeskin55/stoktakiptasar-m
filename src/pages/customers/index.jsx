@@ -50,7 +50,6 @@ import {
   FiCalendar,
   FiCreditCard
 } from 'react-icons/fi';
-import Sidebar from '../../components/Sidebar';
 import styles from './Customers.module.css';
 
 const Customers = () => {
@@ -155,7 +154,6 @@ const Customers = () => {
 
   return (
     <Flex className={styles.container}>
-      <Sidebar />
       <Box className={styles.content}>
         <Container maxW="container.xl" py={8}>
           {/* Header */}

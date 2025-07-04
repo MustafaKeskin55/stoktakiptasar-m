@@ -13,8 +13,6 @@ import {
   FiPackage,
   FiUsers,
 } from 'react-icons/fi';
-import Sidebar from '../../components/Sidebar';
-import Navbar from '../../components/Navbar';
 import styles from './Reports.module.css';
 
 const mockReports = {
@@ -61,14 +59,12 @@ const StatCard = ({ title, value, icon, color, subValue }) => {
   );
 };
 
-export default function Reports() {
+const Reports = () => {
   const [timeRange, setTimeRange] = useState('month');
 
   return (
     <Flex minH="100vh">
-      <Sidebar />
       <Box flex="1" ml="280px">
-        <Navbar />
         <Box className={styles.pageContainer}>
           <Box className={styles.header}>
             <Heading size="lg">Raporlar</Heading>
@@ -163,4 +159,6 @@ export default function Reports() {
       </Box>
     </Flex>
   );
-} 
+};
+
+export default Reports; 

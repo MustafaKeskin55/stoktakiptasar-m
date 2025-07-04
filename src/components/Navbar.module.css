@@ -1,26 +1,33 @@
 .navbar {
   background: white;
   border-bottom: 1px solid #E2E8F0;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 900;
   width: 100%;
   backdrop-filter: blur(8px);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 60px;
 }
 
 .navbar input:focus {
-  box-shadow: none;
-  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--chakra-colors-brand-500);
+  border-color: var(--chakra-colors-brand-500);
 }
 
 .searchInput {
   max-width: 400px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.searchInputFocused {
+  transform: translateY(-2px);
 }
 
 .searchInput:focus {
-  box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.2);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
 }
 
 .notificationBadge {
@@ -30,7 +37,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #E53E3E;
+  background-color: var(--chakra-colors-red-500);
   color: white;
   font-size: 12px;
   display: flex;
@@ -38,8 +45,65 @@
   justify-content: center;
 }
 
+.iconButton {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.iconButton:hover {
+  transform: translateY(-2px);
+}
+
+.notificationButton {
+  transition: all 0.2s;
+}
+
+.notificationButton:hover {
+  color: var(--chakra-colors-brand-500);
+}
+
+.notificationPopover {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: none;
+  overflow: hidden;
+}
+
+.avatar {
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.avatar:hover {
+  border-color: var(--chakra-colors-brand-500);
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .searchInput {
     max-width: 100%;
   }
+  
+  .navbar {
+    padding: 0 0.5rem;
+    height: 56px;
+  }
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.notificationBadge {
+  animation: pulse 2s infinite;
 } 

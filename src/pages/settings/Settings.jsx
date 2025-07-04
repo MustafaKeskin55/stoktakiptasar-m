@@ -17,8 +17,6 @@ import {
   Text,
   Flex,
 } from '@chakra-ui/react';
-import Sidebar from '../../components/Sidebar';
-import Navbar from '../../components/Navbar';
 import styles from './Settings.module.css';
 
 const Settings = () => {
@@ -49,9 +47,7 @@ const Settings = () => {
 
   return (
     <Flex minH="100vh">
-      <Sidebar />
       <Box flex="1" ml="250px">
-        <Navbar />
         <Box p={4} bg="gray.50">
           <Heading size="lg" mb={6}>Ayarlar</Heading>
 

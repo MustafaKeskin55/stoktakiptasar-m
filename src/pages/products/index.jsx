@@ -24,8 +24,6 @@ import {
   FiTrash2,
   FiSearch,
 } from 'react-icons/fi';
-import Sidebar from '../../components/Sidebar';
-import Navbar from '../../components/Navbar';
 import styles from './Products.module.css';
 
 const mockProducts = [
@@ -115,9 +113,7 @@ export default function Products() {
 
   return (
     <Flex minH="100vh">
-      <Sidebar />
       <Box flex="1" ml="280px">
-        <Navbar />
         <Box className={styles.pageContainer}>
           <Box className={styles.header}>
             <Heading size="lg">Ürünler</Heading>
