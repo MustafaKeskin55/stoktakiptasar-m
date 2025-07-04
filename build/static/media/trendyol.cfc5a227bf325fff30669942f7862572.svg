@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M37.5 20C37.5 29.665 29.665 37.5 20 37.5C10.335 37.5 2.5 29.665 2.5 20C2.5 10.335 10.335 2.5 20 2.5C29.665 2.5 37.5 10.335 37.5 20Z" fill="#FF6000"/>
-  <path d="M55 12.5H65L70 27.5H75L80 12.5H90" stroke="#FF6000" stroke-width="2.5"/>
-  <path d="M95 12.5H105L110 27.5H115L120 12.5H130" stroke="#FF6000" stroke-width="2.5"/>
-  <path d="M135 12.5H145L150 27.5H155L160 12.5H170" stroke="#FF6000" stroke-width="2.5"/>
-  <path d="M175 12.5H185L190 27.5H195L197.5 12.5" stroke="#FF6000" stroke-width="2.5"/>
-</svg> 
